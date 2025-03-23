@@ -12,7 +12,7 @@ This project focuses on detecting license plates using the **YOLOv8 model**. It 
 ## Installation
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/license-plate-detection.git
+git clone https://github.com/raxor555/License-Plate-Detection.git
 cd license-plate-detection
 ```
 ### Install Dependencies
@@ -30,16 +30,6 @@ pip install ultralytics opencv-python numpy matplotlib
    ```python
    model.train(data="dataset.yaml", epochs=50, imgsz=640)
    ```
-
-## Running Inference
-To detect license plates on an image or video:
-```python
-results = model("test_image.jpg", show=True)
-```
-For video detection:
-```python
-results = model("test_video.mp4", save=True)
-```
 
 ## Dataset Preparation
 Ensure that your dataset follows the YOLO format:
